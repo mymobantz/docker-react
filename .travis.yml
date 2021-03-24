@@ -10,4 +10,4 @@ before_install:
 script:
 
   - docker run mymobantz/docker-react npm run test -- --coverage
-
+  - bash build.sh || travis_terminate 1;
